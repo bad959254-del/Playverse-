@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Play Game | PlayVerse Arcade</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Rajdhani:wght@500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="bg-glow-orb orb-1"></div>
+  <div class="bg-glow-orb orb-2"></div>
+
+  <!-- Game Page Navigation -->
+  <header class="header">
+    <div class="container nav-container">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">⚡</span>
+        <span class="logo-text">PLAY<span class="gold-text">VERSE</span></span>
+      </a>
+      <a href="index.html" class="btn-pill" id="navBackBtn">← All Games</a>
+    </div>
+  </header>
+
+  <main class="main-content">
+    <div class="container" style="padding-top: 24px;">
+      
+      <!-- Top Action Bar -->
+      <div class="game-header-bar">
+        <a href="index.html" class="btn-pill">← Back to Home</a>
+        <button id="restartBtn" class="btn-pill btn-pill-gold">↺ Restart Game</button>
+      </div>
+
+      <!-- Title & Instructions Summary -->
+      <div class="game-title-wrap">
+        <h1 id="gameTitle" class="game-page-title">Loading Game...</h1>
+        <p id="gameDesc" class="game-page-desc"></p>
+      </div>
+
+      <!-- Main Game Viewport -->
+      <div class="game-viewport" id="gameViewport">
+        <!-- Game container dynamically mounted by game.js -->
+      </div>
+
+      <!-- Game Instructions Card -->
+      <div class="game-instructions-card">
+        <h3>How to Play & Controls</h3>
+        <div id="gameInstructionsBody">
+          <!-- Populated by game.js -->
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-bottom">
+      <p>&copy; 2026 PlayVerse Arcade. Optimized for Mobile & Desktop.</p>
+    </div>
+  </footer>
+
+  <script src="game.js"></script>
+</body>
+</html>
